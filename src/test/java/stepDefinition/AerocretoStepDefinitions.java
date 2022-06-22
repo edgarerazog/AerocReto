@@ -30,6 +30,7 @@ public class AerocretoStepDefinitions {
     }
     @When("cuando este en la opcion Estados financiero ingresar a la casilla Balances y descargar el PDF de marzo del presente año")
     public void cuandoEsteEnLaOpcionEstadosFinancieroIngresarALaCasillaBalancesYDescargarElPDFDeMarzoDelPresenteAño() {
+        theActorCalled(Constants.ACTOR).attemptsTo(Click_Pdf.click_Pdf());
 
     }
     @Then("Validar que el PDF descargado sea el correcto")

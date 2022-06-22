@@ -148,7 +148,7 @@
             <a href="capabilities.html"><i class="bi bi-journal-text"></i> Requirements</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 22-06-2022 15:51</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 22-06-2022 18:24</span>
     <br style="clear:left"/>
 </div>
 
@@ -189,9 +189,9 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-x-circle-fill failure-icon fa-2x' title='FAILURE'></i></a></span>
                             <span class="test-case-title">
-                                <span class="success-color">Vamos a descargar el archivo Estado de situacion financiera del mes de marzo del presente a&ntilde;o
+                                <span class="failing-color">Vamos a descargar el archivo Estado de situacion financiera del mes de marzo del presente a&ntilde;o
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -208,6 +208,49 @@
 
     <div id="beforetable"></div>
     <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">Element should be present exception: Expected condition failed: waiting for By.id: file-download to be present (tried for 5 second(s) with 100 milliseconds interval)Build info: version: '4.1.3', revision: '7b1ebf28ef'System info: host: 'CHBOGPF2FKJ68', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'Driver info: driver.version: unknown</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall"
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="bi bi-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>net.thucydides.core.webdriver.exceptions.ElementShouldBePresentException </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>co.com.aerocreto.dto.tasks.Click_Pdf.performAs(Click_Pdf.java:19)<br />stepDefinition.AerocretoStepDefinitions.cuandoEsteEnLaOpcionEstadosFinancieroIngresarALaCasillaBalancesYDescargarElPDFDeMarzoDelPresenteAño(AerocretoStepDefinitions.java:33)<br />io.cucumber.java.Invoker.doInvoke(Invoker.java:66)<br />io.cucumber.java.Invoker.invoke(Invoker.java:24)<br />io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)<br />io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)<br />io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)<br />io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)<br />io.cucumber.core.runner.TestStep.executeStep(TestStep.java:86)<br />io.cucumber.core.runner.TestStep.run(TestStep.java:57)<br />io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)<br />io.cucumber.core.runner.TestCase.run(TestCase.java:95)<br />io.cucumber.core.runner.Runner.runPickle(Runner.java:75)<br />io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$3(CucumberExecutionContext.java:151)<br />io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)<br />io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:151)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)<br />io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:259)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:58)<br /></pre>
+                    </div>
+
+                    <h4>
+                        Caused by: org.openqa.selenium.TimeoutException
+                    </h4>
+                    <div>
+                            <pre>Expected condition failed: waiting for By.id: file-download to be present (tried for 5 second(s) with 100 milliseconds interval)<br>Build info: version: '4.1.3', revision: '7b1ebf28ef'<br>System info: host: 'CHBOGPF2FKJ68', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'<br>Driver info: driver.version: unknown</pre>
+                        <pre>co.com.aerocreto.dto.tasks.Click_Pdf.performAs(Click_Pdf.java :19)<br />stepDefinition.AerocretoStepDefinitions.cuandoEsteEnLaOpcionEstadosFinancieroIngresarALaCasillaBalancesYDescargarElPDFDeMarzoDelPresenteAño(AerocretoStepDefinitions.java :33)<br />io.cucumber.java.Invoker.doInvoke(Invoker.java :66)<br />io.cucumber.java.Invoker.invoke(Invoker.java :24)<br />io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java :47)<br />io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java :29)<br />io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java :66)<br />io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java :63)<br />io.cucumber.core.runner.TestStep.executeStep(TestStep.java :86)<br />io.cucumber.core.runner.TestStep.run(TestStep.java :57)<br />io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java :51)<br />io.cucumber.core.runner.TestCase.run(TestCase.java :95)<br />io.cucumber.core.runner.Runner.runPickle(Runner.java :75)<br />io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$3(CucumberExecutionContext.java :151)<br />io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java :23)<br />io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java :151)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java :144)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java :28)<br />io.cucumber.junit.FeatureRunner.run(FeatureRunner.java :137)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java :259)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java :58)<br /></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+                <div class="panel-body">
+                    <a href="pagesource6138967465090885120.html" target="_blank" class="btn btn-info">HTML Source</a>
+                </div>
+            </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
                 <img src="85b707508506d6f71a2e56233726d4c48b1cf107a0bdc7d6a142f8a52db79771.png" title=" Given el cliente ingresa a la pagina web para realizar la descarga del archivo pdf Estado de situacion Financiera de marzo del presente a&ntilde;o" width="929"/>
@@ -218,23 +261,28 @@
                 <img src="3e2a82e78cb1ed80a97c5f988d62171b7fd01c166408ae9b0d80105fabea1ca1.png" title=" Leonardo enters 'Presupuesto' into Ingresar la palabra Busqueda" width="1920"/>
                 <img src="98301e0d723b5b92ed222249b7b4bf84c669b7ac6f8626c704cd2d771d222b99.png" title=" Leonardo enters 'Presupuesto' into Ingresar la palabra Busqueda (completed)" width="1920"/>
                 <img src="98301e0d723b5b92ed222249b7b4bf84c669b7ac6f8626c704cd2d771d222b99.png" title=" Leonardo clicks on Click en el Buscador" width="1920"/>
-                <img src="3f0255d5580737544d7b5befc05936721fef8b82fdda1dcda7b937a3043f3156.png" title=" Leonardo clicks on Click en el Buscador (completed)" width="1920"/>
-                <img src="3db922bd188e40ed642f5913599c6fd984ac2f09c86ebd291e5c1905e1ab2c43.png" title=" Leonardo click busqueda (completed)" width="1920"/>
-                <img src="3db922bd188e40ed642f5913599c6fd984ac2f09c86ebd291e5c1905e1ab2c43.png" title=" Leonardo resultado busqueda" width="1920"/>
-                <img src="3db922bd188e40ed642f5913599c6fd984ac2f09c86ebd291e5c1905e1ab2c43.png" title=" Leonardo clicks on Click en Presupuesto" width="1920"/>
-                <img src="a064692102a6d8c6926e511a2083a09d965db4d95fcacd0a5c741b6a0b62c0cb.png" title=" Leonardo clicks on Click en Presupuesto (completed)" width="1920"/>
-                <img src="a064692102a6d8c6926e511a2083a09d965db4d95fcacd0a5c741b6a0b62c0cb.png" title=" Leonardo resultado busqueda (completed)" width="1920"/>
-                <img src="a064692102a6d8c6926e511a2083a09d965db4d95fcacd0a5c741b6a0b62c0cb.png" title=" Leonardo click estados financieros" width="1920"/>
-                <img src="a064692102a6d8c6926e511a2083a09d965db4d95fcacd0a5c741b6a0b62c0cb.png" title=" Leonardo clicks on Click en EstadosFinancieros" width="1920"/>
-                <img src="c2bdf415340fb909d6925d4d501a3d3eab58e71527f5428e9f667c521431c8d9.png" title=" Leonardo clicks on Click en EstadosFinancieros (completed)" width="1920"/>
-                <img src="c2bdf415340fb909d6925d4d501a3d3eab58e71527f5428e9f667c521431c8d9.png" title=" Leonardo click estados financieros (completed)" width="1920"/>
-                <img src="c2bdf415340fb909d6925d4d501a3d3eab58e71527f5428e9f667c521431c8d9.png" title=" Leonardo click balances" width="1920"/>
-                <img src="c2bdf415340fb909d6925d4d501a3d3eab58e71527f5428e9f667c521431c8d9.png" title=" Leonardo clicks on Click en Balances" width="1920"/>
-                <img src="8ac354553fb3b0d1b75e9e4029a2d299063c09a5fa14e95bcd5165fa288c7f6f.png" title=" Leonardo clicks on Click en Balances (completed)" width="1920"/>
+                <img src="ad22f25ded1d5e0fe62df0d580cc2f1d242cc3347e3bcdf0cd0229d82ad3808b.png" title=" Leonardo clicks on Click en el Buscador (completed)" width="1920"/>
+                <img src="29db5edfa1d81c91ca9437199ae7737309f0a2ac760a911603ce95e4c37c55a6.png" title=" Leonardo click busqueda (completed)" width="1920"/>
+                <img src="629d808693e2644621ceb60d9c0bf8ca79a2642819c6dd7c9f0aca8b2ea72a0d.png" title=" Leonardo resultado busqueda" width="1920"/>
+                <img src="629d808693e2644621ceb60d9c0bf8ca79a2642819c6dd7c9f0aca8b2ea72a0d.png" title=" Leonardo clicks on Click en Presupuesto" width="1920"/>
+                <img src="9c738757c329c5f6fd29887a7405e103ebade9d4f0c9685a3eb90161969625f1.png" title=" Leonardo clicks on Click en Presupuesto (completed)" width="1920"/>
+                <img src="9c738757c329c5f6fd29887a7405e103ebade9d4f0c9685a3eb90161969625f1.png" title=" Leonardo resultado busqueda (completed)" width="1920"/>
+                <img src="9c738757c329c5f6fd29887a7405e103ebade9d4f0c9685a3eb90161969625f1.png" title=" Leonardo click estados financieros" width="1920"/>
+                <img src="9c738757c329c5f6fd29887a7405e103ebade9d4f0c9685a3eb90161969625f1.png" title=" Leonardo clicks on Click en EstadosFinancieros" width="1920"/>
+                <img src="ce4b266037da1bf9681c1394e474b84b2ca415ef216f8472d23f571850fb7ecc.png" title=" Leonardo clicks on Click en EstadosFinancieros (completed)" width="1920"/>
+                <img src="ce4b266037da1bf9681c1394e474b84b2ca415ef216f8472d23f571850fb7ecc.png" title=" Leonardo click estados financieros (completed)" width="1920"/>
+                <img src="ce4b266037da1bf9681c1394e474b84b2ca415ef216f8472d23f571850fb7ecc.png" title=" Leonardo click balances" width="1920"/>
+                <img src="ce4b266037da1bf9681c1394e474b84b2ca415ef216f8472d23f571850fb7ecc.png" title=" Leonardo clicks on Click en Balances" width="1920"/>
+                <img src="df22175eebbba6c5e21bce17dbb81c9e03a8fa775d29316bb66da273e75e4cd0.png" title=" Leonardo clicks on Click en Balances (completed)" width="1920"/>
                 <img src="d5dfe21008d2c96b6ac637e27af30dc1979c0e48cd9ee5e06c24dbbe703dd70b.png" title=" Leonardo click balances (completed)" width="1920"/>
                 <img src="d5dfe21008d2c96b6ac637e27af30dc1979c0e48cd9ee5e06c24dbbe703dd70b.png" title=" Given el cliente ingresa a la pagina web para realizar la descarga del archivo pdf Estado de situacion Financiera de marzo del presente a&ntilde;o (completed)" width="1920"/>
                 <img src="d5dfe21008d2c96b6ac637e27af30dc1979c0e48cd9ee5e06c24dbbe703dd70b.png" title=" When cuando este en la opcion Estados financiero ingresar a la casilla Balances y descargar el PDF de marzo del presente a&ntilde;o" width="1920"/>
-                <img src="d5dfe21008d2c96b6ac637e27af30dc1979c0e48cd9ee5e06c24dbbe703dd70b.png" title=" Then Validar que el PDF descargado sea el correcto: <span class='success-color'>SUCCESS</span>" width="1920"/>
+                <img src="d5dfe21008d2c96b6ac637e27af30dc1979c0e48cd9ee5e06c24dbbe703dd70b.png" title=" Leonardo click pdf" width="1920"/>
+                <img src="d5dfe21008d2c96b6ac637e27af30dc1979c0e48cd9ee5e06c24dbbe703dd70b.png" title=" Leonardo clicks on Click en descargar PDF" width="1920"/>
+                <img src="bb5e003abb5e4f2af71e98b4a9455423d1e1d9c6014cab97edf74bb73dd4565d.png" title=" Leonardo clicks on Click en abrir el PDF" width="1920"/>
+                <img src="f5f8d185f46e6f5c67608763dd44545822b616732ad6dc0d91bb9c1e448c5d47.png" title=" Leonardo clicks on Click en abrir el PDF (completed)" width="1920"/>
+                <img src="f5f8d185f46e6f5c67608763dd44545822b616732ad6dc0d91bb9c1e448c5d47.png" title=" Leonardo clicks on Click en la flecha el PDF" width="1920"/>
+                <img src="d2700d071397f43c2eec113c2523ff91a2df226bcfa455d9064ef4392d2290ab.png" title=" Leonardo clicks on Click en la flecha el PDF (completed): <span class='failing-color'>FAILURE</span>" width="1920"/>
             </div>
         </div>
 

@@ -13,6 +13,7 @@ public class Click_Balances implements Task {
 
     @Override
     public <T extends Actor> void performAs(T actor) {
+
         actor.attemptsTo(Click.on(CLICK_BALANCES));
     }
     public static Performable click_Balances(){ return Tasks.instrumented(Click_Balances.class);

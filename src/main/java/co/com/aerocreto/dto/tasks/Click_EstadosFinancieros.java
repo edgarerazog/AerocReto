@@ -13,7 +13,9 @@ public class Click_EstadosFinancieros implements Task {
 
     @Override
     public <T extends Actor> void performAs(T actor) {
+
         actor.attemptsTo(Click.on(CLICK_ESTADOSFINANCIEROS));
+
     }
     public static Performable click_EstadosFinancieros(){ return Tasks.instrumented(Click_EstadosFinancieros.class);
     }
