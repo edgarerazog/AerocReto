@@ -1,0 +1,249 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="bootstrap-icons/font/bootstrap-icons.css"><!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.11.3/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.11.3/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.11.3/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/>
+<!--CHART.JS-->
+<script src="chartjs/chart.js"></script>
+<script src="chartjs/chartjs-plugin-datalabels@2.0.0"></script>
+<script src="chartjs/patternomaly.min.js"></script>
+<script>
+    // Register the plugin to all charts:
+    Chart.register(ChartDataLabels);
+</script>
+<!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle"></span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="aa0b30a1712f1d2e80b23f273c70e505d892a40a170cfc1516866becfdc90bb5.html">Descargar El PDF De Manera Exitosa</a></span>
+                > <span class="truncate-60"><a
+                    href="3708d889b1812b62320361ea28edd41fa2ab970e952abe85be9c6aa18d32ba0c.html">Vamos a descargar el archivo Estado de situacion financiera del mes de marzo del presente a&ntilde;o </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="bi bi-journal-check"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="bi bi-journal-text"></i> Requirements</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 22-06-2022 15:51</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fs-2 bi bi-chat-left-quote large-icon"></i>
+                                    <span class="story-header-title">Descargar El PDF De Manera Exitosa</span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="51c1eea70e0c4948c38d1a36beccfa1bafbe86a5156af53f828122e5ebcf6f1e.html">DescargaPDF
+                                    (tag)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Vamos a descargar el archivo Estado de situacion financiera del mes de marzo del presente a&ntilde;o
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="85b707508506d6f71a2e56233726d4c48b1cf107a0bdc7d6a142f8a52db79771.png" title=" Given el cliente ingresa a la pagina web para realizar la descarga del archivo pdf Estado de situacion Financiera de marzo del presente a&ntilde;o" width="929"/>
+                <img src="85b707508506d6f71a2e56233726d4c48b1cf107a0bdc7d6a142f8a52db79771.png" title=" Leonardo open web aeroc reto" width="929"/>
+                <img src="85b707508506d6f71a2e56233726d4c48b1cf107a0bdc7d6a142f8a52db79771.png" title=" Leonardo opens the browser at https://www.aerocivil.gov.co/" width="929"/>
+                <img src="c5598f2a29c6a5d5fadc7792d6e876b0d4287a6aefc74bbfd5e3c23e2823bef7.png" title=" Leonardo open web aeroc reto (completed)" width="1920"/>
+                <img src="3e2a82e78cb1ed80a97c5f988d62171b7fd01c166408ae9b0d80105fabea1ca1.png" title=" Leonardo click busqueda" width="1920"/>
+                <img src="3e2a82e78cb1ed80a97c5f988d62171b7fd01c166408ae9b0d80105fabea1ca1.png" title=" Leonardo enters 'Presupuesto' into Ingresar la palabra Busqueda" width="1920"/>
+                <img src="98301e0d723b5b92ed222249b7b4bf84c669b7ac6f8626c704cd2d771d222b99.png" title=" Leonardo enters 'Presupuesto' into Ingresar la palabra Busqueda (completed)" width="1920"/>
+                <img src="98301e0d723b5b92ed222249b7b4bf84c669b7ac6f8626c704cd2d771d222b99.png" title=" Leonardo clicks on Click en el Buscador" width="1920"/>
+                <img src="3f0255d5580737544d7b5befc05936721fef8b82fdda1dcda7b937a3043f3156.png" title=" Leonardo clicks on Click en el Buscador (completed)" width="1920"/>
+                <img src="3db922bd188e40ed642f5913599c6fd984ac2f09c86ebd291e5c1905e1ab2c43.png" title=" Leonardo click busqueda (completed)" width="1920"/>
+                <img src="3db922bd188e40ed642f5913599c6fd984ac2f09c86ebd291e5c1905e1ab2c43.png" title=" Leonardo resultado busqueda" width="1920"/>
+                <img src="3db922bd188e40ed642f5913599c6fd984ac2f09c86ebd291e5c1905e1ab2c43.png" title=" Leonardo clicks on Click en Presupuesto" width="1920"/>
+                <img src="a064692102a6d8c6926e511a2083a09d965db4d95fcacd0a5c741b6a0b62c0cb.png" title=" Leonardo clicks on Click en Presupuesto (completed)" width="1920"/>
+                <img src="a064692102a6d8c6926e511a2083a09d965db4d95fcacd0a5c741b6a0b62c0cb.png" title=" Leonardo resultado busqueda (completed)" width="1920"/>
+                <img src="a064692102a6d8c6926e511a2083a09d965db4d95fcacd0a5c741b6a0b62c0cb.png" title=" Leonardo click estados financieros" width="1920"/>
+                <img src="a064692102a6d8c6926e511a2083a09d965db4d95fcacd0a5c741b6a0b62c0cb.png" title=" Leonardo clicks on Click en EstadosFinancieros" width="1920"/>
+                <img src="c2bdf415340fb909d6925d4d501a3d3eab58e71527f5428e9f667c521431c8d9.png" title=" Leonardo clicks on Click en EstadosFinancieros (completed)" width="1920"/>
+                <img src="c2bdf415340fb909d6925d4d501a3d3eab58e71527f5428e9f667c521431c8d9.png" title=" Leonardo click estados financieros (completed)" width="1920"/>
+                <img src="c2bdf415340fb909d6925d4d501a3d3eab58e71527f5428e9f667c521431c8d9.png" title=" Leonardo click balances" width="1920"/>
+                <img src="c2bdf415340fb909d6925d4d501a3d3eab58e71527f5428e9f667c521431c8d9.png" title=" Leonardo clicks on Click en Balances" width="1920"/>
+                <img src="8ac354553fb3b0d1b75e9e4029a2d299063c09a5fa14e95bcd5165fa288c7f6f.png" title=" Leonardo clicks on Click en Balances (completed)" width="1920"/>
+                <img src="d5dfe21008d2c96b6ac637e27af30dc1979c0e48cd9ee5e06c24dbbe703dd70b.png" title=" Leonardo click balances (completed)" width="1920"/>
+                <img src="d5dfe21008d2c96b6ac637e27af30dc1979c0e48cd9ee5e06c24dbbe703dd70b.png" title=" Given el cliente ingresa a la pagina web para realizar la descarga del archivo pdf Estado de situacion Financiera de marzo del presente a&ntilde;o (completed)" width="1920"/>
+                <img src="d5dfe21008d2c96b6ac637e27af30dc1979c0e48cd9ee5e06c24dbbe703dd70b.png" title=" When cuando este en la opcion Estados financiero ingresar a la casilla Balances y descargar el PDF de marzo del presente a&ntilde;o" width="1920"/>
+                <img src="d5dfe21008d2c96b6ac637e27af30dc1979c0e48cd9ee5e06c24dbbe703dd70b.png" title=" Then Validar que el PDF descargado sea el correcto: <span class='success-color'>SUCCESS</span>" width="1920"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 3.2.5</span>
+</div>
+</body>
+</html>

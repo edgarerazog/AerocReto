@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Descargar el PDF de manera exitosa" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-06-22T20:51:39" hostname="CHBOGPF2FKJ68" time="35.545">
+  <properties/>
+  <testcase name="Vamos a descargar el archivo Estado de situacion financiera del mes de marzo del presente año" classname="Descargar el PDF de manera exitosa" time="35.545"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 57777
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+jun 22, 2022 3:51:47 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: W3C
+jun 22, 2022 3:51:47 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTENCIA: Unable to find an exact match for CDP version 101, so returning the closest version found: 99
+jun 22, 2022 3:51:47 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFORMACIÓN: Found CDP implementation for version 101 of 99
+]]></system-err>
+</testsuite>
