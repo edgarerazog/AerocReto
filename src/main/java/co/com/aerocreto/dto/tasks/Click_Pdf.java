@@ -15,8 +15,8 @@ public class Click_Pdf implements Task {
     public <T extends Actor> void performAs(T actor) {
 
         actor.attemptsTo(Click.on(CLICK_PDF));
-        actor.attemptsTo(Click.on(CLICK_ABRIRPDF));
-        actor.attemptsTo(Click.on(CLICK_GUARDARPDF));
+        //actor.attemptsTo(Click.on(CLICK_ABRIRPDF));
+        //actor.attemptsTo(Click.on(CLICK_GUARDARPDF));
     }
 
 

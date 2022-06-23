@@ -7,7 +7,7 @@ import org.junit.runner.RunWith;
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(features = {"src/test/resources/feature/aerocreto.feature"}
         , glue = {"stepDefinition"}
-        , tags = "@DescargaPDF"
+        , tags = "@pdf"
         , snippets =  CucumberOptions.SnippetType.CAMELCASE)
 public class RunnerProcesodeDescargarPDF {
 }
