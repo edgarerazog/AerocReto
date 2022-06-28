@@ -6,10 +6,9 @@ import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.Click;
 
-import static co.com.aerocreto.dto.userinterface.EstadosFinancierosClick.CLICK_ESTADOSFINANCIEROS;
-import static co.com.aerocreto.dto.userinterface.Presupuesto.CLICK_PRESUPUESTO;
+import static co.com.aerocreto.dto.userinterface.estadosFinancierosClick.CLICK_ESTADOSFINANCIEROS;
 
-public class Click_EstadosFinancieros implements Task {
+public class AccederaLosEstadosFinancieros implements Task {
 
     @Override
     public <T extends Actor> void performAs(T actor) {
@@ -17,6 +16,6 @@ public class Click_EstadosFinancieros implements Task {
         actor.attemptsTo(Click.on(CLICK_ESTADOSFINANCIEROS));
 
     }
-    public static Performable click_EstadosFinancieros(){ return Tasks.instrumented(Click_EstadosFinancieros.class);
+    public static Performable accederaLosEstadosFinancieros(){ return Tasks.instrumented(AccederaLosEstadosFinancieros.class);
     }
 }

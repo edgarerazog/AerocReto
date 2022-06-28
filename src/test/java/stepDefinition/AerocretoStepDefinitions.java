@@ -2,6 +2,7 @@ package stepDefinition;
 
 import co.com.aerocreto.dto.helpers.abilities.ReadPdf;
 import co.com.aerocreto.dto.helpers.hooks.DeletePdfFiles;
+import co.com.aerocreto.dto.question.home.ValidarInicio;
 import co.com.aerocreto.dto.tasks.*;
 import co.com.aerocreto.dto.util.Constants;
 import io.cucumber.java.Before;
@@ -14,6 +15,7 @@ import net.thucydides.core.util.EnvironmentVariables;
 
 import java.io.IOException;
 
+import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorCalled;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 
@@ -33,19 +35,19 @@ public class AerocretoStepDefinitions {
         fileName = environmentVariables.optionalProperty("statements.fileName")
                 .orElseThrow(IllegalArgumentException::new);
 
-        theActorCalled(Constants.ACTOR).wasAbleTo(OpenWebAerocReto.openWebAerocReto());
+        theActorCalled(Constants.ACTOR).wasAbleTo(AbrirlaPaginaDeAero.abrirlaPaginaDeAero());
         //theActorCalled(Constants.ACTOR).wasAbleTo(Click_Busqueda.click_Transparencia());
         //theActorCalled(Constants.ACTOR).wasAbleTo(Click_Busqueda.click_Transparencia());
-        theActorCalled(Constants.ACTOR).attemptsTo(Click_Busqueda.click_Busqueda());
-        theActorCalled(Constants.ACTOR).attemptsTo(Resultado_Busqueda.resultado_Busqueda());
-        theActorCalled(Constants.ACTOR).attemptsTo(Click_EstadosFinancieros.click_EstadosFinancieros());
-        theActorCalled(Constants.ACTOR).attemptsTo(Click_Balances.click_Balances());
-
+        theActorInTheSpotlight().should(seeThat(ValidarInicio.LogoAeronautica()));
+        theActorCalled(Constants.ACTOR).wasAbleTo(IngresaraLaOpcionDeBusqueda.ingresaraLaOpcionDeBusqueda(),
+        VisualizarlosResultadosDeLaBusqueda.visualizarlosResultadosDeLaBusqueda(),
+        AccederaLosEstadosFinancieros.accederaLosEstadosFinancieros(),
+        IngresarA_losBalances.ingresarA_losBalances());
 
     }
     @When("cuando este en la opcion Estados financiero ingresar a la casilla Balances y descargar el PDF de marzo del presente año")
     public void cuandoEsteEnLaOpcionEstadosFinancieroIngresarALaCasillaBalancesYDescargarElPDFDeMarzoDelPresenteAño() {
-        theActorCalled(Constants.ACTOR).attemptsTo(Click_Pdf.click_Pdf());
+        theActorCalled(Constants.ACTOR).attemptsTo(Realizar_laDescargarDelPDF.realizar_laDescargarDelPDF());
 
     }
     @Then("Validar que el PDF descargado sea el correcto")

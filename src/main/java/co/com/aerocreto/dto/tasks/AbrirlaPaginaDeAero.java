@@ -16,7 +16,7 @@ import java.time.format.DateTimeFormatter;
 
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 
-public class OpenWebAerocReto implements Task {
+public class AbrirlaPaginaDeAero implements Task {
     private EnvironmentVariables environmentVariables;
 
     @Override
@@ -44,6 +44,6 @@ public class OpenWebAerocReto implements Task {
 
         }
     }
-    public static Performable openWebAerocReto(){ return Tasks.instrumented(OpenWebAerocReto.class);
+    public static Performable abrirlaPaginaDeAero(){ return Tasks.instrumented(AbrirlaPaginaDeAero.class);
     }
 }

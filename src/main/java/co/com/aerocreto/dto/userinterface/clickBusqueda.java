@@ -4,7 +4,7 @@ import net.serenitybdd.core.pages.PageObject;
 import net.serenitybdd.screenplay.targets.Target;
 import org.openqa.selenium.By;
 
-public class BusquedaClick extends PageObject {
+public class clickBusqueda extends PageObject {
 
     //public static final Target DROWNLIST_TIPO_TRANSPARENCIA = Target.the("despliega la lista de Transparencia").located(By.xpath("//li[@class='static dynamic-children'][4]"));
     //public static final Target ITEM_PRESUPUESTO = Target.the("selecciona la opcion Presupuesto").located(By.xpath("/select[@id='Presupuesto']"));

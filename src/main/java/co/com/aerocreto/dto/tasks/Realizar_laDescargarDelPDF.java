@@ -6,10 +6,9 @@ import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.Click;
 
-import static co.com.aerocreto.dto.userinterface.BalancesClick.CLICK_BALANCES;
-import static co.com.aerocreto.dto.userinterface.PdfClick.*;
+import static co.com.aerocreto.dto.userinterface.pdfClick.*;
 
-public class Click_Pdf implements Task {
+public class Realizar_laDescargarDelPDF implements Task {
 
     @Override
     public <T extends Actor> void performAs(T actor) {
@@ -20,6 +19,6 @@ public class Click_Pdf implements Task {
     }
 
 
-    public static Performable click_Pdf(){ return Tasks.instrumented(Click_Pdf.class);
+    public static Performable realizar_laDescargarDelPDF(){ return Tasks.instrumented(Realizar_laDescargarDelPDF.class);
     }
 }
